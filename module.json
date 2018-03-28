@@ -1,10 +1,10 @@
 {
   "name": "microbit",
-  "version": "2.0.0-rc10",
-  "description": "A simple to use collection of the most commonly used components in the micro:bit runtime",
+  "version": "5.0.0",
+  "description": "A simple to use collection of the most commonly used components in the armbit runtime",
   "license": "MIT",
   "dependencies": {
-    "microbit-dal": "ewarrior77/microbit-dal#v2.0.0-rc9"
+    "microbit-dal": "armbit/armbit-dal#~5.0.0"
   },
   "extraIncludes": [
     "inc"
