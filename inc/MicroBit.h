@@ -111,6 +111,12 @@ class MicroBit
     MicroBitDisplay             display;
     MicroBitButton              buttonA;
     MicroBitButton              buttonB;
+#if MICROBIT_DISPLAY_TYPE == ARMBIT_V01
+    MicroBitButton              buttonC;
+    MicroBitButton              buttonD;
+#endif
+
+
     MicroBitMultiButton         buttonAB;
     MicroBitAccelerometer       accelerometer;
     MicroBitCompass             compass;

@@ -67,6 +67,10 @@ MicroBit::MicroBit() :
     display(),
     buttonA(MICROBIT_PIN_BUTTON_A, MICROBIT_ID_BUTTON_A),
     buttonB(MICROBIT_PIN_BUTTON_B, MICROBIT_ID_BUTTON_B),
+#if MICROBIT_DISPLAY_TYPE == ARMBIT_V01
+    buttonC(MICROBIT_PIN_BUTTON_C, MICROBIT_ID_BUTTON_C),
+    buttonD(MICROBIT_PIN_BUTTON_D, MICROBIT_ID_BUTTON_D),
+#endif
     buttonAB(MICROBIT_ID_BUTTON_A,MICROBIT_ID_BUTTON_B, MICROBIT_ID_BUTTON_AB),
     accelerometer(i2c),
     compass(i2c, accelerometer, storage),
